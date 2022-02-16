@@ -24,7 +24,7 @@ namespace Algorithm_program
             {
                 Console.WriteLine(str);
             }
-            else
+            else 
             {
                 for (int i = start; i <= end; i++)
                 {

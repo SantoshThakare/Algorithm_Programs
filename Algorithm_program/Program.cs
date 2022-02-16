@@ -8,14 +8,34 @@ namespace Algorithm_program
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Enter String to find Permutation ");
-            string str = Console.ReadLine();
-            int n = str.Length;
-            Console.WriteLine(n);
-            permutation.Permutate(str, 0, n - 1);
+            System.Console.WriteLine("Welcome to Algorithm Programs :  \n Choose operation :"+
+            
+            "\n 1. Insertion Sort"+
 
-        }
+            "\n 2. Permutation");
+
+            int option = Convert.ToInt32(Console.ReadLine());
+            
+
+            switch (option)
+            {                             
+                case 1:
+                    InsertionSort sort = new InsertionSort();
+                      sort.InsertionSortMethod();
+                    break;
+                case 2:
+                    Console.WriteLine("Enter String to find Permutation ");
+                    string str = Console.ReadLine();
+                    int n = str.Length;
+                    Console.WriteLine(n);
+                    permutation.Permutate(str, 0, n - 1);
+                    break;
+                default:
+                    System.Console.WriteLine("Choose correct option");
+                    break;
+            }
+}
     }
 }
