@@ -14,7 +14,7 @@ namespace Algorithm_program
             string str = Console.ReadLine();
             int n = str.Length;
             Console.WriteLine(n);
-            permutation.Permutate(str, 1, n );
+            permutation.Permutate(str, 0, n - 1);
 
         }
     }
