@@ -10,11 +10,12 @@ namespace Algorithm_program
     {
         public static void Main(string[] args)
         {
-            System.Console.WriteLine("Welcome to Algorithm Programs :  \n Choose operation :"+
+            Console.WriteLine("Welcome to Algorithm Programs :  \n Choose operation :"+
             
             "\n 1. Insertion Sort"+
 
-            "\n 2. Permutation");
+            "\n 2. Permutation" +
+            "\n 3. Anagram ");
 
             int option = Convert.ToInt32(Console.ReadLine());
             
@@ -31,6 +32,9 @@ namespace Algorithm_program
                     int n = str.Length;
                     Console.WriteLine(n);
                     permutation.Permutate(str, 0, n - 1);
+                    break;
+                case 3:
+                    Anagram.FindingTheAnagram();
                     break;
                 default:
                     System.Console.WriteLine("Choose correct option");
