@@ -15,7 +15,8 @@ namespace Algorithm_program
             "\n 1. Insertion Sort"+
 
             "\n 2. Permutation" +
-            "\n 3. Anagram ");
+            "\n 3. Anagrame" +
+            "\n 4. Prime Range ");
 
             int option = Convert.ToInt32(Console.ReadLine());
             
@@ -36,10 +37,14 @@ namespace Algorithm_program
                 case 3:
                     Anagram.FindingTheAnagram();
                     break;
+                case 4:
+                    PrimeRange prime = new PrimeRange();
+                    prime.FindPrime();
+                    break;
                 default:
                     System.Console.WriteLine("Choose correct option");
                     break;
             }
-}
+        }
     }
 }
